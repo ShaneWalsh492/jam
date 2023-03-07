@@ -128,7 +128,7 @@ To do so, use the following command from the repo root on the `master` branch:
 
 ```sh
 # Add all modified files to a new commit
-git commit -am "Solve Round 1 challenges (or whatever message here)"
+git commit -am "Solve Round 2 challenges"
 # Push your commit to your fork
 git push
 ```

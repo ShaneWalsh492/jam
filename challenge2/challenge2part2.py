@@ -19,14 +19,15 @@ def get_prices_input(message):
 
 def problem2_4(message):
     prices = get_prices_input(message)
-    mostExpensivePrice = 0
+    mostExpensivePrice = max(prices)
 
     return str(mostExpensivePrice)
 
 
 def problem2_5(message):
     prices = get_prices_input(message)
-    totalCost = 0
+
+    totalCost = sum(prices)
 
 
     return str(totalCost)
@@ -34,7 +35,12 @@ def problem2_5(message):
 
 def problem2_6(message):
     prices = get_prices_input(message)
+    
+    #multiply the prices for each value
     totalCost = 0
+    for price in prices:
+        totalCost += price * 11.03
 
+        totalCost = round(totalCost)
 
     return str(totalCost)
